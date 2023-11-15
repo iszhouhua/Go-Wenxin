@@ -6,8 +6,8 @@ import (
 	"io"
 	"testing"
 
-	ai_customv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ai_custom/v1"
-	"github.com/ConnectAI-E/go-wenxin/pkg/errors"
+	ai_customv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	"github.com/iszhouhua/go-wenxin/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package baidubce.ernievilg.v1;
 
-option go_package = "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ernievilg/v1;ernievilgv1";
+option go_package = "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ernievilg/v1;ernievilgv1";
 option java_multiple_files = true;
 option java_outer_classname = "WenxinworkshopProto";
 option java_package = "com.qiniai.wenxin.baidubce.ernievilg.v1";

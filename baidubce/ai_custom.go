@@ -5,9 +5,9 @@ import (
 	"errors"
 	"io"
 
-	ai_customv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ai_custom/v1"
-	commonv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/common/v1"
-	"github.com/ConnectAI-E/go-wenxin/internal"
+	ai_customv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	commonv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/common/v1"
+	"github.com/iszhouhua/go-wenxin/internal"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
@@ -29,6 +29,38 @@ func (cli Client) ChatCompletions(
 		SetBody(in).
 		SetSuccessResult(res).
 		Post("/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions")
+	if err != nil {
+		return nil, err
+	}
+	if res.ErrorCode > 0 {
+		return nil, errors.New(res.GetErrorMsg())
+	}
+
+	if resp.StatusCode != 200 {
+		body, err := io.ReadAll(resp.Body)
+		if err != nil {
+			return nil, err
+		}
+		return nil, errors.New(string(body))
+	}
+
+	return &res.ChatResponse, err
+}
+
+// ChatCompletions 文心一言云服务（4.0）
+func (cli Client) ErnieBot4ChatCompletions(
+	ctx context.Context, in *ai_customv1.ChatCompletionsRequest, opts ...grpc.CallOption,
+) (*ai_customv1.ChatResponse, error) {
+	res := new(struct {
+		commonv1.Error
+		ai_customv1.ChatResponse
+	})
+
+	in.Stream = false
+	resp, err := cli.client.R().
+		SetBody(in).
+		SetSuccessResult(res).
+		Post("/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions_pro")
 	if err != nil {
 		return nil, err
 	}

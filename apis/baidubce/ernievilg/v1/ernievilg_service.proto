@@ -6,7 +6,7 @@ import "baidubce/ernievilg/v1/ernievilg.proto";
 import "google/api/annotations.proto";
 import "google/api/client.proto";
 
-option go_package = "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ernievilg/v1;ernievilgv1";
+option go_package = "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ernievilg/v1;ernievilgv1";
 option java_multiple_files = true;
 option java_outer_classname = "ErnievilgServiceProto";
 option java_package = "com.qiniai.wenxin.baidubce.ernievilg.v1";

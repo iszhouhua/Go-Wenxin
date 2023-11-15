@@ -7,8 +7,8 @@ import (
 
 	"google.golang.org/grpc"
 
-	commonv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/common/v1"
-	ernievilgv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ernievilg/v1"
+	commonv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/common/v1"
+	ernievilgv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ernievilg/v1"
 )
 
 var _ ernievilgv1.ErnievilgServiceClient = new(Client)

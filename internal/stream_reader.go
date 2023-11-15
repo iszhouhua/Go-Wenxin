@@ -8,7 +8,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/ConnectAI-E/go-wenxin/pkg/errors"
+	"github.com/iszhouhua/go-wenxin/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

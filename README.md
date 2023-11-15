@@ -1,6 +1,6 @@
 
 <p align='center'>
-    <img src='https://github.com/ConnectAI-E/go-wenxin/assets/50035229/84af1dfe-43c2-456b-85ce-52e787e034cb' alt='' width='1300'/>
+    <img src='https://github.com/iszhouhua/go-wenxin/assets/50035229/84af1dfe-43c2-456b-85ce-52e787e034cb' alt='' width='1300'/>
 </p>
 
 
@@ -19,7 +19,7 @@
 ### Swagger 文档
 - [打开在线Swagger编辑器](https://editor.swagger.io/)
 - 导入[Swagger Api 文档](./output/apis.swagger.yaml)
-<img width="1200" alt="image" src="https://github.com/ConnectAI-E/MidJourney-Web/assets/50035229/cab8814a-468c-41ab-94a3-b067e528f147">
+<img width="1200" alt="image" src="https://github.com/iszhouhua/MidJourney-Web/assets/50035229/cab8814a-468c-41ab-94a3-b067e528f147">
 
 ### 使用方法
 
@@ -35,9 +35,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/ConnectAI-E/go-wenxin/baidubce"
-	ai_customv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/v1"
+	"github.com/iszhouhua/go-wenxin/baidubce"
+	ai_customv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/v1"
 )
 
 //init client
@@ -78,9 +78,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/ConnectAI-E/go-wenxin/baidubce"
-	ai_customv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/v1"
+	"github.com/iszhouhua/go-wenxin/baidubce"
+	ai_customv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/v1"
 )
 
 //init client
@@ -120,9 +120,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/ConnectAI-E/go-wenxin/baidubce"
-	ai_customv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/v1"
+	"github.com/iszhouhua/go-wenxin/baidubce"
+	ai_customv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/v1"
 	"io"
 )
 
@@ -176,9 +176,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/ConnectAI-E/go-wenxin/baidubce"
-	ai_customv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/v1"
+	"github.com/iszhouhua/go-wenxin/baidubce"
+	ai_customv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/v1"
 	"io"
 )
 

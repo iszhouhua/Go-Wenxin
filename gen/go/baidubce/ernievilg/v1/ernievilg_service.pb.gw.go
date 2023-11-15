@@ -161,7 +161,7 @@ func RegisterErnievilgServiceHandlerServer(ctx context.Context, mux *runtime.Ser
 // RegisterErnievilgServiceHandlerFromEndpoint is same as RegisterErnievilgServiceHandler but
 // automatically dials to "endpoint" and closes the connection when "ctx" gets done.
 func RegisterErnievilgServiceHandlerFromEndpoint(ctx context.Context, mux *runtime.ServeMux, endpoint string, opts []grpc.DialOption) (err error) {
-	conn, err := grpc.Dial(endpoint, opts...)
+	conn, err := grpc.DialContext(ctx, endpoint, opts...)
 	if err != nil {
 		return err
 	}

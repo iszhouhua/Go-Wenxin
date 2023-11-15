@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	baidubcev1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/v1"
+	baidubcev1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/v1"
 	"github.com/stretchr/testify/assert"
 )
 

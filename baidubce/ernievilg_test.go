@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	ernievilgv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ernievilg/v1"
+	ernievilgv1 "github.com/iszhouhua/go-wenxin/gen/go/baidubce/ernievilg/v1"
 	"github.com/stretchr/testify/assert"
 )
 
